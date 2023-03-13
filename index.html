@@ -47,8 +47,11 @@
 			<div><a href="./templates/contact.html">კონტაქტი</a></div>
 		</div>
 		<!-- slider -->
-		<div class="slideshow-container">
-			<div class="mySlides fade">
+		<div class="slider" id="slider">
+			<div class="wrapper">
+	
+		<div class="slideshow-container slides" id="slides">
+			<div class="mySlides fade ">
 				<img src="./static/images/_MG_8663==.png" />
 				<div class="sliderInfo">
 					<div class="sliderInfo_container sliderInfo_container_rp">
@@ -69,10 +72,9 @@
 						</div>
 					</div>
 				</div>
-
+	
 				<div class="slider_btn_container">
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
 				</div>
 			</div>
 			<div class="mySlides fade">
@@ -96,13 +98,11 @@
 						</div>
 					</div>
 				</div>
-
+	
 				<div class="slider_btn_container">
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				   
 				</div>
 			</div>
-
 			<div class="mySlides fade">
 				<img src="./static/images/_MG_-3.png" />
 				<div class="sliderInfo">
@@ -124,12 +124,14 @@
 						</div>
 					</div>
 				</div>
-
+	
 				<div class="slider_btn_container">
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  
 				</div>
-			</div>
+			</div>            
+		</div>
+	</div>     <div class="slider_btn_container"> <div class="prev" id="prev">&#10094;</div>
+	<div class="next" id="next">&#10095;</div></div>
 		</div>
 
 		<!-- posts -->
@@ -305,18 +307,16 @@
 				</div>
 			</div>
 		</footer>
-		<!-- <iframe class="postsAbout_frame" src="postAbout.html"></iframe>
-		<iframe class="postsService_frame" src="postService.html"></iframe
-		><iframe class="postsGallery_frame" src="postGallery.html"></iframe> -->
-		<!-- <script src="./static/stylesheets/slider.js"></script> -->
-		<script src="./static/stylesheets/gallery.js"></script>
-		<script>
-			var munu = document.getElementById("menu");
-			function myFunction(x) {
-				x.classList.toggle("change");
-				munu.classList.toggle("block");
-			}
-		</script>
-	</body>
-	<!-- <script src="slider.js"></script> -->
+	
+
+	</body>		
+	<script src="./static/stylesheets/gallery.js"></script>
+	<script>
+		var munu = document.getElementById("menu");
+		function myFunction(x) {
+			x.classList.toggle("change");
+			munu.classList.toggle("block");
+		}
+	</script>
+	<script src="./static/stylesheets/slider.js"></script>
 </html>

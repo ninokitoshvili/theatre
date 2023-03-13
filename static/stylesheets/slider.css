@@ -3,29 +3,20 @@
 	font-style: normal;
 	src: url(bpg_mrgvlovani_caps_2010.ttf);
 }
-/* .slideshow-container {
+
+
+.slideshow-container {
 	max-width: 100%;
 	height: 840px;
 	position: relative;
 	margin: auto;
 	margin-bottom: 30px;
-} */
+}
 
 .slideshow-container div img {
-	width: 100%;
 	height: 100%;
 }
 
-.slider_btn_container {
-	/* background: green; */
-	position: absolute;
-	width: 160px;
-	display: flex;
-	justify-content: space-between;
-	margin: 10px;
-	right: 140px;
-	bottom: 0;
-}
 .sliderInfo button {
 	margin-bottom: 10px;
 }
@@ -33,13 +24,8 @@
 .next {
 	border: 1px solid #f7f4f4;
 	cursor: pointer;
-	/* position: absolute; */
-	/* top: 50%; */
-	/* background: red; */
 	width: 70px;
 	height: 70px;
-	/* padding: 16px;
-	margin-top: -22px; */
 	color: #f2f2f2;
 	align-items: center;
 	justify-content: center;
@@ -51,28 +37,40 @@
 	user-select: none;
 }
 
-/* Position the "next button" to the right */
-/* .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-} */
+.sliderInfo_container button,
+.main_gallery_btn,
+button {
+	width: 240px;
+	height: 70px;
+	color: #0c3d93;
+	border: 1px solid #0c3d93;
+	font-family: mrgvlovani;
+	cursor: pointer;
+	font-size: 24px;
+	line-height: 33px;
+}
 
-/* On hover, add a black background color with a little bit see-through */
+.slider_btn_container {
+	position: absolute;
+	width: 160px;
+	display: flex;
+	justify-content: space-between;
+	bottom: 35px;
+	right: 140px;
+	z-index: 5;
+}
+
 .prev:hover,
 .next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .sliderInfo {
 	height: 300px;
 	width: 692px;
 	background: #ffffff;
-	/* background: red; */
 	opacity: 89%;
 	color: #f2f2f2;
-	font-size: 15px;
-	/* padding: 8px 12px; */
 	position: absolute;
 	bottom: 0px;
 	display: flex;
@@ -80,11 +78,10 @@
 }
 
 .sliderInfo_container {
-	/* background: green; */
-	/* width: calc(100% - 140px); */
 	color: #3c3c3c;
 	display: flex;
 	flex-direction: column;
+	width: 500px;
 	justify-content: space-between;
 }
 
@@ -95,10 +92,8 @@
 }
 
 .sliderInfo_container p {
-	/* font-size: 24px;
-	line-height: 28px;
-	font-weight: bold; */
 	letter-spacing: 3px;
+	line-height: 26px;
 }
 
 .sliderInfo_container button,
@@ -112,35 +107,41 @@
 	font-size: 24px;
 	line-height: 33px;
 }
-.mySlides img {
-	max-width: 1903px;
-}
-/* Fading animation */
+
 .fade {
-	/* -webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s; */
 	animation-name: fade;
 	animation-duration: 1.5s;
 }
 
-.mySlides {
+.slider {
 	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.slides {
+	display: flex;
+	position: relative;
+	left: 0;
+	width: 100000px;
 }
 
-/* @-webkit-keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
-} */
-
-@keyframes fade {
-	from {
-		opacity: 0.8;
-	}
-	to {
-		opacity: 1;
-	}
+.slides.shifting {
+	transition: left 0.2s ease-out;
+}
+.mySlides {
+	height: auto;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 1s;
+	position: relative;
+	border-radius: 2px;
 }
