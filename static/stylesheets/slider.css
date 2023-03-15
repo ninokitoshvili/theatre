@@ -4,7 +4,6 @@
 	src: url(bpg_mrgvlovani_caps_2010.ttf);
 }
 
-
 .slideshow-container {
 	max-width: 100%;
 	height: 840px;
@@ -15,6 +14,8 @@
 
 .slideshow-container div img {
 	height: 100%;
+	width: auto;
+	width: 100vw;
 }
 
 .sliderInfo button {
@@ -114,7 +115,7 @@ button {
 }
 
 .slider {
-	position: absolute;
+	/* position: absolute; */
 	width: 100%;
 	height: auto;
 }
@@ -136,6 +137,7 @@ button {
 	transition: left 0.2s ease-out;
 }
 .mySlides {
+	width: 100vw;
 	height: auto;
 	cursor: pointer;
 	display: flex;
@@ -143,5 +145,4 @@ button {
 	justify-content: center;
 	transition: all 1s;
 	position: relative;
-	border-radius: 2px;
 }

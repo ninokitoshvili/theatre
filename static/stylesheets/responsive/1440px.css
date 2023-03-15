@@ -10,7 +10,7 @@
 		width: 50%;
 	}
 	.slideshow-container {
-		height: 750px;
+		/* height: 750px; */
 	}
 	/* .main_gallery_container {
 		height: 900px;
@@ -69,7 +69,7 @@
 		margin: 20px auto;
 	}
 	.main_service img {
-		width: 75%;
+		width: 70%;
 		/* height: 90%; */
 	}
 

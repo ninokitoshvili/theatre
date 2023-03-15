@@ -2,17 +2,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/* background: cadetblue; */
 }
 
 .service-container {
 	width: 72%;
 	/* height: 200px; */
-	/* background: brown; */
-}
-
-.service-logoinfo {
-	/* background: burlywood; */
 }
 
 .service-container_header {
@@ -31,7 +25,6 @@
 	width: 100%;
 	flex-direction: row;
 	justify-content: space-between;
-	/* background: coral; */
 	height: 500px;
 	align-items: center;
 }

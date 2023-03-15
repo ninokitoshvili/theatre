@@ -22,7 +22,6 @@
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	/* background: orange; */
 }
 .sliderInfo_container button,
 .main_gallery_btn,
@@ -37,12 +36,6 @@ button {
 	line-height: 33px;
 }
 
-.slider_btn_container {
-	/* background: green; */
-	position: absolute;
-	width: 160px;
-	display: flex;
-	justify-content: space-between;
-	bottom: 0px;
-	right: 140px;
+.homepage-post-resp {
+	width: 650px;
 }
