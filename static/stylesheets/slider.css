@@ -109,9 +109,9 @@ button {
 	line-height: 33px;
 }
 
-.fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
+.fade,
+.fade img {
+	width: 100% !important;
 }
 
 .slider {
@@ -145,4 +145,6 @@ button {
 	justify-content: center;
 	transition: all 1s;
 	position: relative;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
