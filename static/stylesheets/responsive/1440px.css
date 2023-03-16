@@ -10,7 +10,7 @@
 		width: 50%;
 	}
 	.slideshow-container {
-		/* height: 750px; */
+		height: 750px;
 	}
 	/* .main_gallery_container {
 		height: 900px;
@@ -29,6 +29,9 @@
 	}
 	.service-info_container_information {
 		width: fit-content;
+	}
+	.main_service {
+		margin-top: 0;
 	}
 }
 @media screen and (max-width: 1440px) {
